@@ -258,23 +258,20 @@ p {
 
 .skillset {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three skills in each row */
-  gap: 20px; /* Adjust the gap between items */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
 }
-/* Updated style for each skill item with an interactive color scheme */
-/* Style for each skill item with an interactive color scheme */
-/* Style for each skill item with a frontend development color scheme */
+
 .skillset .item {
-  border: 2px solid #24a9cf; /* Border color (React Blue) */
+  border: 2px solid #24a9cf; 
   border-radius: 5px;
-  background-color: #edf4f9; /* Background color (Alice Blue) */
+  background-color: #edf4f9; 
   padding: 0.5em;
-  color: #333; /* Text color (Dark Gray) */
+  color: #333; 
   text-align: center;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-/* Hover effect for each skill item */
 .skillset .item:hover {
   background-color: #153842;
   color: #fff;
