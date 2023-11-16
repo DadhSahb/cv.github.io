@@ -226,6 +226,9 @@ p {
   overflow: hidden;
   margin-bottom: 2px;
 }
+.main-wrapper .summary-section {
+  margin-top: 40px;
+}
 .main-wrapper .job-title {
   color: #3f4650;
   font-size: 16px;
@@ -258,16 +261,18 @@ p {
 
 .skillset {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 20px; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 15px;
 }
 
 .skillset .item {
-  border: 2px solid #24a9cf; 
+  border: 2px solid #24a9cf;
   border-radius: 5px;
-  background-color: #edf4f9; 
+  background-color: #edf4f9;
   padding: 0.5em;
-  color: #333; 
+  color: #333;
+  margin-top: 25px;
   text-align: center;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
@@ -330,6 +335,24 @@ p {
 
   .main-wrapper .upper-row {
     margin-bottom: 0;
+  }
+  .skillset {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 10px;
+  }
+
+  .skillset .item {
+    border: 2px solid #24a9cf;
+    border-radius: 5px;
+    background-color: #edf4f9;
+    padding: 0.3em;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
   }
 }
 @media (min-width: 992px) {
