@@ -55,7 +55,7 @@ p {
 }
 
 .sidebar-wrapper {
-  background: #4b6a78;
+  background: #134961;
   position: absolute;
   right: 0;
   width: 290px;
@@ -179,7 +179,7 @@ p {
   background: #fff;
   padding: 60px;
   padding-right: 350px;
-  height: 246vh;
+  height: 166vh;
 }
 .main-wrapper .section-title {
   text-transform: uppercase;
@@ -189,6 +189,7 @@ p {
   position: relative;
   margin-top: 0;
   margin-bottom: 20px;
+  border-bottom: 1px solid #a9a9a9;
 }
 .main-wrapper .section-title .icon-holder {
   width: 30px;
@@ -255,11 +256,32 @@ p {
   margin-bottom: 15px;
 }
 
-.skillset .item {
-  margin-bottom: 15px;
-  overflow: hidden;
+.skillset {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three skills in each row */
+  gap: 20px; /* Adjust the gap between items */
 }
-.skillset .level-title {
+/* Updated style for each skill item with an interactive color scheme */
+/* Style for each skill item with an interactive color scheme */
+/* Style for each skill item with a frontend development color scheme */
+.skillset .item {
+  border: 2px solid #24a9cf; /* Border color (React Blue) */
+  border-radius: 5px;
+  background-color: #edf4f9; /* Background color (Alice Blue) */
+  padding: 0.5em;
+  color: #333; /* Text color (Dark Gray) */
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for each skill item */
+.skillset .item:hover {
+  background-color: #153842;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* .skillset .level-title {
   font-size: 14px;
   margin-top: 0;
   margin-bottom: 12px;
@@ -278,7 +300,7 @@ p {
 }
 .skillset .theme-progress-bar {
   background: #5f8697;
-}
+} */
 
 .footer {
   padding: 30px;
